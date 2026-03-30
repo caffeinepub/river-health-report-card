@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 97 0.005 240;
+    --foreground: 20 0.02 240;
+    --card: 100 0 0;
+    --card-foreground: 20 0.02 240;
+    --popover: 100 0 0;
+    --popover-foreground: 20 0.02 240;
+    --primary: 0.42 0.12 240;
+    --primary-foreground: 100 0 0;
+    --secondary: 94 0.01 240;
+    --secondary-foreground: 25 0.02 240;
+    --muted: 94 0.01 240;
+    --muted-foreground: 50 0.02 240;
+    --accent: 0.65 0.18 145;
+    --accent-foreground: 100 0 0;
+    --destructive: 0.55 0.18 25;
+    --destructive-foreground: 100 0 0;
+    --border: 88 0.01 240;
+    --input: 88 0.01 240;
+    --ring: 0.42 0.12 240;
+    --radius: 0.5rem;
+
+    /* Brand colors */
+    --brand-blue: 0.42 0.12 240;
+    --brand-blue-dark: 0.28 0.1 240;
+    --grade-a: 0.65 0.18 145;
+    --grade-b: 0.78 0.15 135;
+    --grade-c: 0.83 0.16 85;
+    --grade-d: 0.7 0.17 60;
+    --grade-f: 0.55 0.18 25;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Montserrat", sans-serif;
+  }
+}
